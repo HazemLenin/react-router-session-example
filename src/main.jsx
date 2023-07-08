@@ -9,8 +9,10 @@ import {
 	ProductsPage,
 	ProductPage,
 	PrivacyPage,
+	FormPage,
 } from "./pages";
 import { loadProducts, loadProduct } from "./loaders";
+import { formAction } from "./actions";
 
 const router = createBrowserRouter([
 	{
@@ -31,6 +33,11 @@ const router = createBrowserRouter([
 				path: "/products/:id",
 				element: <ProductPage />,
 				loader: loadProduct,
+			},
+			{
+				path: "/form",
+				element: <FormPage />,
+				action: formAction,
 			},
 		],
 	},

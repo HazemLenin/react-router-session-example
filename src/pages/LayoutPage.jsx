@@ -8,6 +8,7 @@ function LayoutPage() {
 				<Link to="/">Home</Link>
 				<Link to="/products">Products</Link>
 				<Link to="/privacy">Privacy</Link>
+				<Link to="/form">Form</Link>
 			</nav>
 			<main>
 				<Outlet />
